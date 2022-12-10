@@ -1,0 +1,5 @@
+{
+  "content-packages:ARTIFACTS|true": [
+    "design.aem:sling-clientlibs-tests-content:zip:1.0.0-SNAPSHOT"
+  ]
+}

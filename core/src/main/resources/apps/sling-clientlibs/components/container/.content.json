@@ -1,0 +1,7 @@
+{
+  "sling:resourceType": "ws:Component",
+  "title": "Container",
+  "group": ".hidden",
+  "isContainer": true,
+  "allowedComponents": "AEM.Design Clientlibs"
+}

@@ -1,0 +1,6 @@
+{
+  "sling:resourceType": "ws:Component",
+  "title": "Say Hello",
+  "description": "Example component",
+  "group": "AEM.Design Clientlibs"
+}

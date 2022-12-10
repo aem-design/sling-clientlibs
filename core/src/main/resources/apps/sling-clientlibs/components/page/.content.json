@@ -1,0 +1,6 @@
+{
+  "sling:resourceType": "ws:Component",
+  "sling:resourceSuperType": "wcm/core/components/page",
+  "title": "Page",
+  "group": ".hidden"
+}

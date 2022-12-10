@@ -1,0 +1,15 @@
+{
+  "sling:resourceType": "wcm/dialogs/dialog",
+  "tabs": {
+    "sling:resourceType": "wcm/dialogs/components/tabs",
+    "properties": {
+      "sling:resourceType": "wcm/dialogs/components/tab",
+      "label": "Properties",
+      "helloName": {
+        "sling:resourceType": "wcm/dialogs/components/textfield",
+        "label": "Hello Name",
+        "name": "helloName"
+      }
+    }
+  }
+}

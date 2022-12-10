@@ -1,0 +1,6 @@
+{
+  "sling:resourceType": "ws:PageTemplate",
+  "title": "Content Page",
+  "description": "AEM.Design Clientlibs",
+  "allowedChildren": ["/apps/sling-clientlibs/templates/contentpage"]
+}

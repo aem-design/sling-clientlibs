@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:ws="http://ds.pl/websight"
+  jcr:primaryType="ws:PagesSpace"
+  jcr:title="AEM.Design Clientlibs tests"
+  jcr:description="AEM.Design Clientlibs test project space.">
+</jcr:root>

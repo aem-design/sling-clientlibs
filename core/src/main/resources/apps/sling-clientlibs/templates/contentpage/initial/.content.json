@@ -1,0 +1,10 @@
+{
+  "jcr:primaryType": "ws:Page",
+  "jcr:content": {
+    "jcr:primaryType": "ws:PageContent",
+    "sling:resourceType": "sling-clientlibs/components/page",
+    "container": {
+      "sling:resourceType": "sling-clientlibs/components/container"
+    }
+  }
+}
