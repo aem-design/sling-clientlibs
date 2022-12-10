@@ -1,5 +1,5 @@
 # Releasing
-Howlite release is done using GitHub Actions `Release Howlite` workflow.
+Release is done using GitHub Actions `Release` workflow.
 
 The 'Prepare release' step requires configuring:
 - a public key as [deploy keys](https://docs.github.com/v3/guides/managing-deploy-keys/#deploy-keys) 

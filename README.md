@@ -3,9 +3,9 @@
 ## Modules
 - `core` - components related code and scripts
 - `ui.frontend` - front-end build
-- `tests` - responsible for the automatic validation of the Howlite components
+- `tests` - responsible for the automatic validation of the components
   - `content` - the minimal set of components and pages used during testing
-  - `end-to-end` - end-to-end tests validating both Howlite components on authoring and publication
+  - `end-to-end` - end-to-end tests validating both components on authoring and publication
 
 ## Development
 
@@ -29,10 +29,10 @@ docker run -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INIT
 ```
 
 
-and run howlite-test feature using Sling Launcher from `tests/end-to-end` directory:
+and run test feature using Sling Launcher from `tests/end-to-end` directory:
 
 ```bash
-java -jar target/dependency/org.apache.sling.feature.launcher.jar -f target/slingfeature-tmp/feature-howlite-tests.json
+java -jar target/dependency/org.apache.sling.feature.launcher.jar -f target/slingfeature-tmp/feature-sling-clientlibs-tests.json
 ```
 
 Instance should start at http://localhost:8080/ in a couple of seconds (default credentials: `wsadmin/wsadmin`).
@@ -40,11 +40,5 @@ Instance should start at http://localhost:8080/ in a couple of seconds (default 
 ## Contributing
 Please read our [Contributing Guide](./CONTRIBUTING.md) before submitting a Pull Request to the project.
 
-## Community support
-Please check the community support section in [WebSight Starter](https://github.com/websight-io/starter).
-
-## Authoring Guides
-Description of all Howlite components can be found on [websight.io](https://www.websight.io/guides/authoring/howlite/)
-
 ## License
-Howlite components is `open-source` project with `Apache License 2.0` license.
+Clientlibs is `open-source` project with `Apache License 2.0` license.

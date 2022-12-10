@@ -22,6 +22,7 @@
   <groupId>design.aem</groupId>
   <artifactId>sling-clientlibs</artifactId>
   <version>1.0.0-SNAPSHOT</version>
+  <description>Parent project for sling client libs.</description>
 
   <name>AEM.Design Clientlibs</name>
   <packaging>pom</packaging>
@@ -53,7 +54,7 @@
     <sling.models.bnd.version>1.0.0</sling.models.bnd.version>
     <sling.scriptbundle.version>0.5.2</sling.scriptbundle.version>
     <frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
-    <componentGroupName>pl.ds.howlite</componentGroupName>
+    <componentGroupName>${project.groupId}</componentGroupName>
     <checkstyle.severity.level>warning</checkstyle.severity.level>
 
     <!-- frontend dependencies -->
@@ -75,6 +76,7 @@
     <e2e.skip.cypress>true</e2e.skip.cypress>
     <e2e.skip.visual>true</e2e.skip.visual>
     <mongo.container.image>mongo:4.4.6</mongo.container.image>
+    <vendor>AEM.Design</vendor>
   </properties>
 
   <build>
@@ -132,8 +134,8 @@
                 <exclude>**/node_modules/**</exclude>
                 <exclude>**/node/**</exclude>
                 <exclude>**/dist/**</exclude>
-                <exclude>**/howlite/author/**</exclude>
-                <exclude>**/howlite/web_root/**</exclude>
+                <exclude>**/clientlibs/author/**</exclude>
+                <exclude>**/clientlibs/web_root/**</exclude>
               </excludes>
             </configuration>
           </execution>
@@ -217,8 +219,8 @@
               <configuration>
                 <bnd>
                   <![CDATA[
-                                    Bundle-Developers: Dynamic Solutions
-                                    Bundle-Vendor: Dynamic Solutions
+                                    Bundle-Developers: ${vendor}
+                                    Bundle-Vendor: ${vendor}
                                     Bundle-Category: ${componentGroupName}
 
                                     # export all versioned packages except for conditional ones (https://github.com/bndtools/bnd/issues/3721#issuecomment-579026778)
@@ -301,7 +303,7 @@
               http://${sling.install.package.host}:${sling.install.package.port}/apps/websight-package-manager-service/bin/install
             </targetURL>
             <failOnError>true</failOnError>
-            <group>pl.ds.howlite</group>
+            <group>${project.groupId}</group>
             <userId>${sling.install.package.username}</userId>
             <password>${sling.install.package.password}</password>
           </configuration>
@@ -328,7 +330,6 @@
       <dependency>
         <groupId>org.osgi</groupId>
         <artifactId>org.osgi.annotation.versioning</artifactId>
-        <version>1.1.2</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -419,12 +420,6 @@
         <version>1.4.2</version>
         <scope>provided</scope>
       </dependency>
-      <dependency>
-        <groupId>org.apache.sling</groupId>
-        <artifactId>org.apache.sling.api</artifactId>
-        <version>2.27.0</version>
-        <scope>compile</scope>
-      </dependency>
 
       <!-- JCR -->
       <dependency>
@@ -446,7 +441,8 @@
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
-        <version>4.0.1</version>
+        <version>3.1.0</version>
+        <scope>provided</scope>
       </dependency>
 
       <!-- Other -->
@@ -512,6 +508,7 @@
         <version>4.9.0</version>
         <scope>test</scope>
       </dependency>
+
     </dependencies>
   </dependencyManagement>
 

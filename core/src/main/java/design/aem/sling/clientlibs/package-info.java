@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2022 Dynamic Solutions
+ * Copyright (C) 2022 AEM.Design
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,21 +14,7 @@
  * limitations under the License.
  */
 
-package design.aem.sling.clientlibs.models;
+@Version("1.0.0")
+package design.aem.sling.clientlibs;
 
-import javax.inject.Inject;
-import org.apache.sling.api.resource.Resource;
-import org.apache.sling.models.annotations.Default;
-import org.apache.sling.models.annotations.Model;
-
-@Model(adaptables = Resource.class)
-public class SayHelloModel {
-
-  @Inject
-  @Default(values = "World")
-  private String helloName;
-
-  public String getHelloText() {
-    return "Hello " + helloName + "!";
-  }
-}
+import org.osgi.annotation.versioning.Version;
