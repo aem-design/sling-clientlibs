@@ -134,8 +134,9 @@
                 <exclude>**/node_modules/**</exclude>
                 <exclude>**/node/**</exclude>
                 <exclude>**/dist/**</exclude>
-                <exclude>**/clientlibs/author/**</exclude>
-                <exclude>**/clientlibs/web_root/**</exclude>
+                <exclude>**/sling-clientlibs/author/**</exclude>
+                <exclude>**/sling-clientlibs/web_root/**</exclude>
+                <exclude>**/clientlibs/**</exclude>
               </excludes>
             </configuration>
           </execution>

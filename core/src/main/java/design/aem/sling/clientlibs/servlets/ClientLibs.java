@@ -30,7 +30,7 @@ import org.osgi.service.component.annotations.Component;
     service = Servlet.class
 )
 @SlingServletResourceTypes(
-    resourceTypes = "ad:ClientLibs",
+    resourceTypes = "design/aem/clientlibs",
     methods = "GET",
     extensions = { "html", "css", "js" }
 )
@@ -39,6 +39,9 @@ public class ClientLibs extends SlingSafeMethodsServlet {
   @Override
   protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response)
       throws ServletException, IOException {
-
+    response.setContentType("text/plain");
+    response.setCharacterEncoding("UTF-8");
+    response.setStatus(200);
+    response.getWriter().write("Done");
   }
 }

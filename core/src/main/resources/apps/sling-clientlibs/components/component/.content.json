@@ -1,0 +1,5 @@
+{
+  "title": "Component",
+  "group": "AEM.Design",
+  "sling:resourceType": "ws:Component"
+}
